@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div id="mainHeader">
+            <h1 id="headerLogo">Employee Data Management</h1>
+            <h3 id="subHeading">Directory of Billable Hours</h3>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="row">
+        <div class="empStorage">
+            <h3 class="panelHeader">Current Employees</h3>
+            <div class="nameStorage">
+                <h3 id="empNameStorage">Employee Name</h3>
+                <span id="nameInfo"></span>
+            </div>
+            <div class="RoleStorage">
+                <h3 id="empRoleStorage">Role</h3>
+                <span id="roleInfo"></span>
+            </div>
+            <div class="StartStorage">
+                <h3 id="empStartStorage">Start Date</h3>
+                <span id="startInfo"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script>
+ // Initialize Firebase
+ var config = {
+   apiKey: "AIzaSyBdnPReDuq99Grp0Rga37ER6EzxXaT-8hg",
+   authDomain: "employeetracker-f441a.firebaseapp.com",
+   databaseURL: "https://employeetracker-f441a.firebaseio.com",
+   projectId: "employeetracker-f441a",
+   storageBucket: "employeetracker-f441a.appspot.com",
+   messagingSenderId: "1056152535744"
+ };
+ firebase.initializeApp(config);
+</script>
+</html>
