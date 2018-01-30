@@ -20,8 +20,23 @@ $(document).ready(function () {
     var database = firebase.database();
 
     $("#submitBtn").on("click", function (event) {
-        //startDate = ;
-        //name = ;
-        //role = ;
-        //monthlyRate = ;
+        event.preventDefault();
+
+        //assign variables to text input
+        name = $("#nameInfo").val().trim();
+        startDate = $("#name-input").val().trim();
+        role = $("#empRoleStorage").val().trim();
+        monthlyRate = $("#name-input").val().trim();
+
+        database.ref().push({
+            name: name,
+            startDate: startDate,
+            role: role,
+            monthlyRate: monthlyRate,
+            dateAdded: firebase.database.serverValue.TIMESTAMP
+        });
+    });
+
+    
+  
     });
