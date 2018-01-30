@@ -33,7 +33,7 @@ $(document).ready(function () {
             startDate: startDate,
             role: role,
             monthlyRate: monthlyRate,
-            dateAdded: firebase.database.serverValue.TIMESTAMP
+            dateAdded: firebase.database.ServerValue.TIMESTAMP
         });
     });
 
