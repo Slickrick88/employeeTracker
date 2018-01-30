@@ -24,9 +24,9 @@ $(document).ready(function () {
 
         //assign variables to text input
         name = $("#nameInfo").val().trim();
-        startDate = $("#name-input").val().trim();
+        startDate = $("#empStartStorage").val().trim();
         role = $("#empRoleStorage").val().trim();
-        monthlyRate = $("#name-input").val().trim();
+        monthlyRate = $("#empRateStorage").val().trim();
 
         database.ref().push({
             name: name,
@@ -37,6 +37,6 @@ $(document).ready(function () {
         });
     });
 
-    
+
   
     });
