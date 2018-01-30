@@ -26,37 +26,63 @@
     </div>
     <form class="wrapper text-center">
         <div class="row">
-            <div class="empStorage">
-                <h3 class="panelHeader">Current Employees</h3>
-                <div class="nameStorage">
-                    <label for="nameInfo">Employee Name</label>
-                    <input type="text" id="nameInfo">
+            <div class="col-lg-6">
+                <div class="empStorage">
+                    <h3 class="panelHeader">Current Employees</h3>
+                    <div class="nameStorage">
+                        <label for="nameInfo">Employee Name</label>
+                        <input type="text" id="nameInfo">
+                    </div>
+                    <div class="RoleStorage">
+                        <label for="empRoleStorage">Role</label>
+                        <input type="text" id="empRoleStorage">
+                    </div>
+                    <div class="StartStorage">
+                        <label for="empStartStorage">Start Date</label>
+                        <input type="text" id="empStartStorage">
+                    </div>
+                    <div class="rateStorage">
+                        <label for="empRateStorage">Monthly Rate ($)</label>
+                        <input type="text" id="empRateStorage">
+                    </div>
+                    <div class="billedStorage">
+                        <label for="empBilledStorage"></label>
+                        <input type="text" id="empBilledStorage">
+                    </div>
                 </div>
-                <div class="RoleStorage">
-                    <label for="empRoleStorage">Role</label>
-                    <input type="text" id="empRoleStorage">
-                </div>
-                <div class="StartStorage">
-                    <label for="empStartStorage">Start Date</label>
-                    <input type="text" id="empStartStorage">
-                    </label>
-                </div>
-                <!-- <div class="monthsStorage"> -->
-                <!-- <label for="empMonthStorage">Months Worked</label> -->
-                <!-- <input type="text" id="empMonthStorage"> -->
-                <!-- </div> -->
-                <div class="rateStorage">
-                    <label for="empRateStorage">Monthly Rate ($)</label>
-                    <input type="text" id="empRateStorage">
-                </div>
-                <div class="billedStorage">
-                    <label for="empBilledStorage"></label>
-                    <input type="text" id="empBilledStorage">
+            <button type="submit" class="btn btn-primary" id="empAdd">SUBMIT</button>
+        </div>
+
+
+            <!-- Most Recent Member Panel -->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Most Recent Member</h3>
+                    </div>
+                    <div class="panel-body" id="recent-member">
+                        <h2 id="name-display"></h2>
+                        <h4 id="email-display"></h4>
+                        <h4 id="age-display"></h4>
+                        <p id="comment-display"></p>
+                    </div>
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary" id="empAdd">SUBMIT</button>
     </form>
+
+
+    <!-- Wells for displaying all users -->
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">All Members</h3>
+            </div>
+            <div class="panel-body">
+                <div id="full-member-list"></div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
