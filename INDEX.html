@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript.js" type="text/javascript"></script>
+    <title>Employee Tracker</title>
 </head>
+
 <body>
-<div class="container">
-    <div class="row">
-        <div id="mainHeader">
-            <h1 id="headerLogo">Employee Data Management</h1>
-            <h3 id="subHeading">Directory of Billable Hours</h3>
+    <div class="container">
+        <div class="row">
+            <div id="mainHeader">
+                <h1 id="headerLogo">Employee Data Management</h1>
+                <h3 id="subHeading">Directory of Billable Hours</h3>
+            </div>
         </div>
     </div>
-</div>
-<form class="wrapper">
-    <div class="row">
-        <div class="empStorage">
-            <h3 class="panelHeader">Current Employees</h3>
-            <div class="nameStorage">
-                <label for="nameInfo">Employee Name</label>
-                <input type="text" id="nameInfo">
+    <form class="wrapper">
+        <div class="row">
+            <div class="empStorage">
+                <h3 class="panelHeader">Current Employees</h3>
+                <div class="nameStorage">
+                    <label for="nameInfo">Employee Name</label>
+                    <input type="text" id="nameInfo">
+                </div>
+                <div class="RoleStorage">
+                    <label for="empRoleStorage">Role</label>
+                    <input type="text" id="empRoleStorage">
+                </div>
+                <div class="StartStorage">
+                    <label for="empStartStorage">Start Date</label>
+                    <input type="text" id="empStartStorage">
+                    </label>
+                </div>
+                <!-- <div class="monthsStorage"> -->
+                <!-- <label for="empMonthStorage">Months Worked</label> -->
+                <!-- <input type="text" id="empMonthStorage"> -->
+                <!-- </div> -->
+                <div class="rateStorage">
+                    <label for="empRateStorage">Monthly Rate ($)</label>
+                    <input type="text" id="empRateStorage">
+                </div>
+                <div class="billedStorage">
+                    <label for="empBilledStorage"></label>
+                    <input type="text" id="empBilledStorage">
+                </div>
             </div>
-            <div class="RoleStorage">
-                <label for="empRoleStorage">Role</label>
-                <input type="text" id="empRoleStorage">
-            </div>
-            <div class="StartStorage">
-                <label for="empStartStorage">Start Date</label>
-                <input type="text" id="empStartStorage"></label>
-            </div>
-           <!-- <div class="monthsStorage"> -->
-               <!-- <label for="empMonthStorage">Months Worked</label> -->
-               <!-- <input type="text" id="empMonthStorage"> -->
-           <!-- </div> -->
-           <div class="rateStorage">
-               <label for="empRateStorage">Monthly Rate ($)</label>
-               <input type="text" id="empRateStorage">
-           </div>
-           <div class="billedStorage">
-               <label for="empBilledStorage"></label>
-               <input type="text" id="empBilledStorage">
-           </div>
         </div>
-    </div>
-    <button type="submit" class="btn btn-primary" id="empAdd">SUBMIT</button>
-</form>
-    
+        <button type="submit" class="btn btn-primary" id="empAdd">SUBMIT</button>
+    </form>
+
 </body>
 
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 <script>
- // Initialize Firebase
- var config = {
-   apiKey: "AIzaSyBdnPReDuq99Grp0Rga37ER6EzxXaT-8hg",
-   authDomain: "employeetracker-f441a.firebaseapp.com",
-   databaseURL: "https://employeetracker-f441a.firebaseio.com",
-   projectId: "employeetracker-f441a",
-   storageBucket: "employeetracker-f441a.appspot.com",
-   messagingSenderId: "1056152535744"
- };
- firebase.initializeApp(config);
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBdnPReDuq99Grp0Rga37ER6EzxXaT-8hg",
+        authDomain: "employeetracker-f441a.firebaseapp.com",
+        databaseURL: "https://employeetracker-f441a.firebaseio.com",
+        projectId: "employeetracker-f441a",
+        storageBucket: "employeetracker-f441a.appspot.com",
+        messagingSenderId: "1056152535744"
+    };
+    firebase.initializeApp(config);
 </script>
+
 </html>
