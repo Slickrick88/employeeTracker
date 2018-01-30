@@ -19,7 +19,7 @@ $(document).ready(function () {
     // Get a reference to the database service
     var database = firebase.database();
 
-    $("#submitBtn").on("click", function (event) {
+    $("#empAdd").on("click", function (event) {
         event.preventDefault();
 
         //assign variables to text input
